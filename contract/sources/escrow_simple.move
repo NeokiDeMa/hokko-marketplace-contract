@@ -228,8 +228,8 @@ public fun decline_offer<T: key + store>(
 /// @param payment The payment (in SUI) for the offer, which includes the price
 /// and market fee.
 /// @param ctx The transaction context of the sender.
-public fun new_offer<T: key + store>(
-    market: &mut MarketPlace,
+fun new_offer<T: key + store>(
+    market: &MarketPlace,
     item_id: ID,
     price: u64,
     payment: Coin<SUI>,
